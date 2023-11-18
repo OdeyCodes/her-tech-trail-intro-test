@@ -6,89 +6,54 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
     <script src="./index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <style>
-        main{
-            /* background-color: rebeccapurple; */
-        }
-        section{
-            /* background-color: aqua; */
+      
 
-        }
-        .image{
-            width: 250px;
-            height: 180px;
-            border-radius: 20px;
-
-        }
-        .title{
-            font-size: 4em;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-align: center;
-            font-weight: bolder;
-            color: rgba(201, 5, 5, 0.747);
-            text-shadow: 2px 2px 5px #333;
-        }
-        #imageName{
-            text-align: center;
-            border-radius: 20px;
-
-            /* background-color: red; */
-        }
-        .grid div{
-            width: 250px;
-            height: 180px;
-            margin-bottom: 20px;
-            border-radius: 20px;
-
-            box-shadow: 2px 3px 10px #333;
-        }
-        .grid{
-
-        }
     </style>
 </head>
 <body>
     <main>
         <article>
             <p class="title">Image Gallery</p>
-            <section class="relative container justify-content-center mx-auto mt-5 ">
-                <div class="grid grid-cols-4 gap-10" >
-                    <div>
-                        <img class="image" src="./images/image1.jfif" alt="">
-                        <p id="imageName" >Photographer</p>
+            <section style="padding: 20px;">
+                <div class="flex gap-4 flex-wrap ">
+                    <div class="box grow">
+                        <img src="./images/friedjolloff.jpg" alt="">
+                        <p onclick="changeColor(event, 'white','red')">Come All</p>
                     </div>
-                    <div>
-                        <img class="image" src="./images/image4.jpg" alt="">
-                        <p id="imageName">Flower</p>
+                    <div class="box grow">
+                        <img src="./images/food2.jpg" alt="">
+                        <p onclick="changeColor(event, 'white','green')">Delicious Spaghetti</p>
                     </div>
-                    <div>
-                        <img class="image" src="./images/image2.jpg" alt="">
-                        <p id="imageName">Sunset</p>
+                    <div class="box grow">
+                        <img src="./images/food4.jpg" alt="">
+                        <p onclick="changeColor(event, 'white','orange')">Vegetables</p>
                     </div>
-                    <div>
-                        <img class="image" src="./images/image3.jpg" alt="">
-                        <p id="imageName">Gorrila</p>
+                    <div class="box grow">
+                        <img src="./images/food5.jpg" alt="">
+                        <p onclick="changeColor(event, 'white','purple')">Make your choice</p>
                     </div>
-                    <div>
-                        <img class="image" src="./images/image6.jfif" alt="">
-                        <p id="imageName">Frames</p>
+                    <div class="box grow">
+                        <img src="./images/food8.jpg" alt="">
+                        <p onclick="changeColor(event, 'white','purple')">Assorted</p>
                     </div>
-                    <div>
-                        <img class="image" src="./images/image7.jpg" alt="">
-                        <p id="imageName">Tiger</p>
+                    <div class="box grow">
+                        <img src="./images/burger.jpg" alt="">
+                        <p onclick="changeColor(event, 'white','orange')">Special Burger</p>
                     </div>
-                    <div>
-                        <img class="image" src="./images/image8.jpg" alt="">
-                        <p id="imageName">Connection</p>
+                    <div class="box grow">
+                        <img src="./images/food3.jpg" alt="">
+                        <p onclick="changeColor(event, 'white','green')">Hmmmmmmm</p>
                     </div>
-                    <div>
-                        <img class="image" src="./images/image5.jpg" alt="">
-                        <p id="imageName">Paint</p>
+                    <div class="box grow">
+                        <img src="./images/shriwms.jpg" alt="">
+                        <p onclick="changeColor(event, 'white','red')">Vegetable Meal</p>
+
                     </div>
-                    <!-- <div>
-                        <img class="image" src="./images/image9.jpg" alt="">
-                        <p>Image1</p>
-                    </div> -->
+
+
+
                 </div>
             </section>
         </article>
